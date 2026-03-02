@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import { EnteteComponent } from './entete/entete.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
 export class AppModule { }
