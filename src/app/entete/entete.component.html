@@ -1,19 +1,16 @@
 <header>
+  <nav class="topnav" id="myTopnav" [class]="menuDisplayedClass()">
   <a class="logo" href="#" aria-label="Retour en haut de page">
       <img src="/assets/images/logo.png" alt="">
   </a>
-  <nav id="desktop-nav">
-      <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" class="nav-highlight">
-        Inscrivez-vous sur les listes électorales
-      </a>
-      <a href="#section-formulaire">
-        Participez à la campagne
-      </a>
-      <a href="#section-idees">
-        Contribuez au programme
-      </a>
-  </nav>
-  <a href="#" aria-label="menu" [aria-expanded]="false" aria-controls="navi">
-    <i class="fa-solid" >{{test}}</i>
+  <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" >Inscrivez-vous sur les listes électorales</a>
+  <a href="#section-formulaire">
+    Participez à la campagne
   </a>
+  <a href="#section-idees">Participez à la campagne</a>
+  <a href="javascript:void(0);"
+    [title]="isMenuDisplayed() ? 'fermer menu':'ouvrir menu'" class="icon" (click)="onClickMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
 </header>

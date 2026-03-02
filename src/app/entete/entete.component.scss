@@ -1,4 +1,25 @@
-@media screen and (max-width: 600px) {
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 850px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
