@@ -1,0 +1,29 @@
+:host{
+  p, li{
+    color: var(--noir)
+  }
+  li::marker{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--violet)
+  }
+  li{
+
+    margin-left: 3rem;
+  }
+  h1{
+    color:var(--violet);
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .subtitle{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}

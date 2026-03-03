@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { Theme } from '../../theme';
 
 @Component({
@@ -9,4 +9,8 @@ import { Theme } from '../../theme';
 })
 export class Accordeon {
   public theme = input.required<Theme>();
+  protected isDisplayed = signal(false);
+  toggleDisplayedContent(){
+    this.isDisplayed.update((isDisplayed)=> !isDisplayed)
+  }
 }

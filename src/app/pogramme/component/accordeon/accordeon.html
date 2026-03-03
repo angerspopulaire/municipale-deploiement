@@ -1,9 +1,24 @@
-<h2>{{theme().titre}}</h2>
-<p>{{theme().description}}</p>
-<ul>
-    @for(mesure of theme().mesures; track mesure){
-        <li>
-            {{mesure}}
-        </li>
-    }
-</ul>
+
+<section>
+    <h2>
+        <button
+          (click)="toggleDisplayedContent()"
+          type="button"
+          class="accordeon"
+          aria-expanded="false"
+          aria-controls="accordion-1"
+          [aria-label]="isDisplayed() ? 'Fermer': 'Ouvrir'">
+            {{theme().titre}}
+            <i aria-hidden="true" class="fa-solid" [class]="isDisplayed() ? 'fa-x':'fa-chevron-right'"></i>
+        </button>
+    </h2>
+    <p>{{theme().description}}</p>
+    <ul class="accordeon-content" [class]="isDisplayed() ? 'show':''">
+        @for(mesure of theme().mesures; track mesure){
+            <li>
+                {{mesure}}
+            </li>
+        }
+    </ul>
+</section>
+

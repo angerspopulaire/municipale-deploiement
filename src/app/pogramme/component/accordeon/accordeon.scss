@@ -1,0 +1,30 @@
+h2 button.accordeon{
+  margin-top: 2rem;
+  color: var(--violet);
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i{
+  margin-left: 2rem;
+  color: var(--noir);
+}
+h2 button.accordeon:hover{
+  text-decoration: underline;
+  i {
+      color: var(--violer);
+  }
+}
+.accordeon-content{
+  display: none;
+}
+.accordeon-content.show{
+  display: block;
+}

@@ -1,12 +1,11 @@
 <h1>Le programme</h1>
-<p>
+<p class="subtitle">
     Découvrez nos 90 mesures!
 </p>
 <ol>
     @for(theme of themes; track theme.titre){
-        <li>
-            <app-accordeon [theme]="theme"></app-accordeon>
-
-        </li>
+      <li>
+          <app-accordeon [theme]="theme"></app-accordeon>
+      </li>
     }
 </ol>
