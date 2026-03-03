@@ -51,16 +51,20 @@ footer{
 }
 header {
     background-color: var(--violet);
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px 30px;
-
+    width: 100%;
+    position: fixed;
+    transition: top 0.3s ease-in-out;
+    top: -400px;
+    left: 0;
+    z-index: 1000;
     .logo img{
         width: auto;
         height: 3rem;
     }
+}
+header.scrolled{
+    top: 0;
 }
 
 a{
@@ -92,10 +96,13 @@ h3{
     font-size: 1.5rem;
 }
 
-// #mobile-nav{
-//     display: none;
-// }
 
 .fa-bars{
     font-size: 3rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer-links{
+    flex-direction: column !important;
+  }
 }

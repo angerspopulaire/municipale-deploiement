@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { EnteteComponent } from './entete/entete.component';
-
+import { RouterLink, RouterOutlet } from '@angular/router';
 @NgModule({
   declarations: [],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterLink,
+    RouterOutlet
   ],
   providers: []
 })

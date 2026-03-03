@@ -42,4 +42,12 @@
         max-width: 50rem;
         gap: 1rem;
     }
+    @media screen and (max-width: 850px) {
+        padding: 1rem;
+        img{
+        width: 100%;
+
+        margin-top: 0rem;
+    }
+    }
 }

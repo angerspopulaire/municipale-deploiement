@@ -1,0 +1,9 @@
+<h2>{{theme().titre}}</h2>
+<p>{{theme().description}}</p>
+<ul>
+    @for(mesure of theme().mesures; track mesure){
+        <li>
+            {{mesure}}
+        </li>
+    }
+</ul>

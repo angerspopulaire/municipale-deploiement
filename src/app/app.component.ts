@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { SectionEnteteComponent } from './section-entete/section-entete.component';
-import { SectionPresentationComponent } from './section-presentation/section-presentation.component';
-import { SectionRejoindreComponent } from './section-rejoindre/section-rejoindre.component';
+import { RouterOutlet } from '@angular/router';
 import { EnteteComponent } from './entete/entete.component';
+import { RetourHautPage } from './retour-haut-page/retour-haut-page';
+import { MentionLegales } from './mention-legales/mention-legales';
+import { PiedDePage } from './pied-de-page/pied-de-page';
 
 @Component({
   standalone:true,
@@ -10,10 +11,10 @@ import { EnteteComponent } from './entete/entete.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   imports:[
-    SectionEnteteComponent,
-    SectionPresentationComponent,
-    SectionRejoindreComponent,
+    RouterOutlet,
     EnteteComponent,
+    RetourHautPage,
+    PiedDePage,
   ]
 })
 export class AppComponent {
