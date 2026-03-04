@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './retour-haut-page.scss',
 })
 export class RetourHautPage {
-
+  goToTop(){
+    globalThis.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

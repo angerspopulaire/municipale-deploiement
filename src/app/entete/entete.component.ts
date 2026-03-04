@@ -22,9 +22,9 @@ export class EnteteComponent {
 onWindowScroll() {
  //we'll do some stuff here when the window is scrolled
  const header = document.getElementsByTagName('header')[0];
- if(globalThis.scrollY > 50 && !header.classList.contains('scrolled')){
+ if(globalThis.scrollY > 2 && !header.classList.contains('scrolled')){
     header.classList += ' scrolled';
- } else if (globalThis.scrollY <= 50 && header.classList.contains('scrolled')){
+ } else if (globalThis.scrollY <= 2 && header.classList.contains('scrolled')){
     header.classList.remove('scrolled');
  }
 }

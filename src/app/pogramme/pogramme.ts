@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Accordeon } from './component/accordeon/accordeon';
 import { Theme } from './theme';
 
 @Component({
   selector: 'app-pogramme',
-  imports: [Accordeon],
+  imports: [Accordeon, RouterLink],
   templateUrl: './pogramme.html',
   styleUrl: './pogramme.scss',
 })

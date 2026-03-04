@@ -32,6 +32,11 @@
     }
     @media screen and (max-width: 850px) {
         padding: 1rem;
+
+        #section-idees{
+            padding: 1rem;
+            padding-bottom: 2rem;
+        }
     }
     a{
         background-color: var(--violet);
@@ -48,5 +53,8 @@
             color: var(--violet);
             background-color: var(--blanc);
         }
+    }
+    .procuration{
+        margin-top: 2rem !important;
     }
 }
